@@ -57,6 +57,9 @@ import cart_icon from './cart_icon.png'
 import menu_icon from './menu_icon.png'
 import dropdown_icon from './dropdown_icon.png'
 import hero_img1 from './hero_img1.webp'
+import exchange_icon from './exchange_icon.png'
+import support_icon from './support_icon.png'
+import quality_icon from './quality_icon.png'
 
 export const assets={
     logo,
@@ -66,6 +69,9 @@ export const assets={
     menu_icon,
     dropdown_icon,
     hero_img1,
+    exchange_icon,
+    support_icon,
+    quality_icon,
     
 }
 
@@ -73,7 +79,7 @@ export const assets={
 export const products=[
     {
         _id:"aaaaa",
-        name:"food",
+        name:"pumkin sooup",
         description:"a food",
         price:100,
         image:[p_img1],
@@ -86,10 +92,114 @@ export const products=[
     },
     {
         _id:"aaaab",
-        name:"food",
+        name:"bread",
+        description:"a food",
+        price:110,
+        image:[p_img2],
+        category:"soup",
+        subCategory:"vegetable",
+        sizes:["S","M","L"],
+        date:19990505,
+        bestseller:false,
+
+    },
+    {
+        _id:"aaaac",
+        name:"sweet dumpling",
+        description:"a food",
+        price:120,
+        image:[p_img3],
+        category:"soup",
+        subCategory:"vegetable",
+        sizes:["S","M","L"],
+        date:19990505,
+        bestseller:false,
+
+    },
+    {
+        _id:"aaaae",
+        name:"shushi",
+        description:"a food",
+        price:110,
+        image:[p_img4],
+        category:"soup",
+        subCategory:"vegetable",
+        sizes:["S","M","L"],
+        date:19990505,
+        bestseller:false,
+
+    },
+    {
+        _id:"aaaaf",
+        name:"egg omlete",
+        description:"a food",
+        price:120,
+        image:[p_img5],
+        category:"soup",
+        subCategory:"vegetable",
+        sizes:["S","M","L"],
+        date:19990505,
+        bestseller:true,
+
+    },
+    {
+        _id:"aaaag",
+        name:"noodle",
+        description:"a food",
+        price:110,
+        image:[p_img6],
+        category:"soup",
+        subCategory:"vegetable",
+        sizes:["S","M","L"],
+        date:19990505,
+        bestseller:true,
+
+    },
+    {
+        _id:"aaaah",
+        name:"deep dry calamari",
         description:"a food",
         price:100,
-        image:[p_img2],
+        image:[p_img7],
+        category:"soup",
+        subCategory:"vegetable",
+        sizes:["S","M","L"],
+        date:19990505,
+        bestseller:true,
+
+    },
+    {
+        _id:"aaaai",
+        name:"noodle soup",
+        description:"a food",
+        price:110,
+        image:[p_img8],
+        category:"soup",
+        subCategory:"vegetable",
+        sizes:["S","M","L"],
+        date:19990505,
+        bestseller:true,
+
+    },
+    {
+        _id:"aaaaj",
+        name:"beef noodle",
+        description:"a food",
+        price:100,
+        image:[p_img9],
+        category:"soup",
+        subCategory:"vegetable",
+        sizes:["S","M","L"],
+        date:19990505,
+        bestseller:false,
+
+    },
+    {
+        _id:"aaaak",
+        name:"bagel",
+        description:"a food",
+        price:100,
+        image:[p_img10],
         category:"soup",
         subCategory:"vegetable",
         sizes:["S","M","L"],
