@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Footer = () => {
   return (
-    <div>
+   <div>
     <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm'>
       <div>
         <img src={assets.logo} className='mb-5 w-32' alt="" />
@@ -26,12 +26,12 @@ const Footer = () => {
           <li>contactme@youcnatry</li>
         </ul>
       </div>
-    </div>
+     </div>
     <div>
       <hr />
       <p className='py-5 text-sm text-center' >Copyright 2024@ Carrot.com Some right reserved.</p>
     </div>
-    </div>
+   </div>
   )
 }
 
