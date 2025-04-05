@@ -60,6 +60,7 @@ import hero_img1 from './hero_img1.webp'
 import exchange_icon from './exchange_icon.png'
 import support_icon from './support_icon.png'
 import quality_icon from './quality_icon.png'
+import cross_icon from './cross_icon.png'
 
 export const assets={
     logo,
@@ -72,6 +73,7 @@ export const assets={
     exchange_icon,
     support_icon,
     quality_icon,
+    cross_icon,
     
 }
 
