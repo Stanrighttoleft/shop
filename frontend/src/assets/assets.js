@@ -50,6 +50,10 @@ import p_img49 from './p_img49.webp'
 import p_img50 from './p_img50.webp'
 import p_img51 from './p_img51.webp'
 import p_img52 from './p_img52.webp'
+import p_img53 from './p_img53.jpeg'
+import p_img54 from './p_img54.webp'
+import p_img55 from './p_img55.webp'
+
 import logo from './logo.png'
 import search_icon from './search_icon.png'
 import profile_icon from './profile_icon.png'
@@ -61,6 +65,9 @@ import exchange_icon from './exchange_icon.png'
 import support_icon from './support_icon.png'
 import quality_icon from './quality_icon.png'
 import cross_icon from './cross_icon.png'
+import star_icon from './star_icon.png'
+import star_dull_icon from './star_dull_icon.png'
+
 
 export const assets={
     logo,
@@ -74,7 +81,8 @@ export const assets={
     support_icon,
     quality_icon,
     cross_icon,
-    
+    star_icon, 
+    star_dull_icon,
 }
 
 
@@ -97,7 +105,7 @@ export const products=[
         name:"bread",
         description:"a food",
         price:110,
-        image:[p_img2],
+        image:[p_img2, p_img53, p_img54, p_img55],
         category:"entry",
         subCategory:"vegetable",
         sizes:["S","M","L"],
