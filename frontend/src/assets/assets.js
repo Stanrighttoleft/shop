@@ -71,6 +71,7 @@ import bin_icon from './bin_icon.png'
 import stripe_logo from './stripe_logo.png'
 import razorpay_logo from './razorpay_log.png'
 import about_image from './about_img.jpg'
+import contact_img from './contact_img.webp'
 
 
 export const assets={
@@ -91,6 +92,7 @@ export const assets={
     stripe_logo,
     razorpay_logo,
     about_image,
+    contact_img,
 }
 
 
