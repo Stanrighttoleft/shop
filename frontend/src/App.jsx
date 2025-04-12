@@ -23,7 +23,7 @@ const App = () => {
       <ToastContainer/>
       <Navbar/>
       <SearchBar/>
-      <Home/>
+      
       
       <Routes>
         <Route path='/' element={<Home/>}/>
