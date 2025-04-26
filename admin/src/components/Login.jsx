@@ -1,22 +1,36 @@
+import axios from 'axios'
 import React, { useState } from 'react'
+import { backendUrl } from '../App'
+import { useNavigate  } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 
-const Login = () => {
-    const [email,setEmail]=useState('')
-    const [password,setPassword]=useState('')
+const Login = ({setToken}) => {
+const [email,setEmail]=useState('')
+const [password,setPassword]=useState('')
+const navigate=useNavigate();
 
-    const onSubmitHandler=async(e)=>{
-        try {
-            e.preventDefault();
-            
-            
-            
-        } catch (error) {
-            
+const onSubmitHandler=async(e)=>{
+    try {
+        e.preventDefault();
+        const response=await axios.post(backendUrl+'/api/user/admin',{email,password})
+        if (response.data.success) {
+            setToken(response.data.token)
+            navigate('/add')
+
+        } else {
+            toast.error(response.data.message)
         }
-    }
 
-  return (
+        
+    } catch (error) {
+        console.log(error);
+        toast.error(error.message)
+        
+    }
+}
+
+return (
     <div className='min-h-screen flex items-center justify-center w-full' >
         <div className='bg-white shadow-md rounded-lg px-8 py-6 max-w-md' >
             <h1 className='text-2xl font-bold mb-4' >Admin Panel</h1>
@@ -34,7 +48,7 @@ const Login = () => {
             </form>
         </div>
     </div>
-  )
-}
+    )
+    }
 
 export default Login
