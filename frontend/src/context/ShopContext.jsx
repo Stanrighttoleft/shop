@@ -81,10 +81,15 @@ const ShopContextProvider=(props)=>{
     const getProductsData=async()=>{
         try {
             const response = await axios.get(backendUrl+'/api/product/list') 
-            console.log(response.data);
-            console.log("ENV BACKEND URL:", import.meta.env.VITE_BACKEND_URL);
+            if(response.data.success){
+                setProducts(response.data.products)
+            }else{
+                toast.error(response.data.message)
+            }
             
         } catch (error) {
+            console.log(error)
+            toast.error(error.message)
             
         }
     }
