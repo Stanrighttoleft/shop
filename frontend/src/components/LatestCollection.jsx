@@ -28,7 +28,7 @@ const LatestCollection = () => {
       <div className="justify-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-2 gap-y-4">
         {
           latestProducts.map((item,index)=>(
-            <ProductItem key={index} id={item.id} image={item.image} price={item.price} name={item.name} />
+            <ProductItem key={index} id={item._id} image={item.image} price={item.price} name={item.name} />
           ))
         }
       </div>
