@@ -9,11 +9,10 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-    
-    
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.17",
+    "axios": "^1.9.0",
     "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
