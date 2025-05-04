@@ -1,4 +1,5 @@
 import orderModel from "../models/oderModel.js";
+import userModel from "../models/userModel.js";
 
 //Placing orders using COD method
 
