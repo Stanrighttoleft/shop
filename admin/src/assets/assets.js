@@ -3,6 +3,7 @@ import add_icon from './add_icon.png'
 import order_icon from './order_icon.png'
 import list_icon from './list_icon.png'
 import upload_area from './upload_area.avif'
+import parcel_icon from './parcel_icon.png'
 
 
 export const assets={
@@ -11,5 +12,6 @@ export const assets={
     order_icon,
     list_icon,
     upload_area,
+    parcel_icon,
 
 }
