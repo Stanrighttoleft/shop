@@ -42,8 +42,14 @@ const Orders = () => {
 
   return (
     <div className='border-t pt-16'>
-      <div className="text-2xl">
-        <Title text1={'My '} text2={'Orders'}/>
+      <div className='flex justify-between items-center mb-6'>
+        <div className="text-2xl">
+          <Title text1={'My '} text2={'Orders'}/>
+        </div>
+        <div>
+          <button onClick={loadOrderData} className="border px-4 py-2 text-sm font-medium rounded-sm">Track Order</button>
+
+        </div>
       </div>
       <div>
         {
@@ -67,7 +73,7 @@ const Orders = () => {
                   <p className='min-w-2 h-2 rounded-full bg-green-500' ></p>
                   <p className='text-sm md:text-base' >{item.status}</p>
                 </div>
-                <button onClick={loadOrderData} className="border px-4 py-2 text-sm font-medium rounded-sm">Track Order</button>
+                
               
               </div>
             </div>
