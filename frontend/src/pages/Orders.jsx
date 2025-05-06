@@ -68,13 +68,11 @@ const Orders = () => {
                   <p className='mt-2' >payment: <span className="text-gray-400">{item.paymentMethod}</span></p>
                 </div>
               </div>
-              <div className="md:w-1/2 flex justify-between">
+              <div className="flex justify-between">
                 <div className="flex items-center gap-2">
                   <p className='min-w-2 h-2 rounded-full bg-green-500' ></p>
                   <p className='text-sm md:text-base' >{item.status}</p>
                 </div>
-                
-              
               </div>
             </div>
           ))
