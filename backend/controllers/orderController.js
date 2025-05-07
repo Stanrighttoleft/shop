@@ -78,8 +78,8 @@ const placeOrderStripe=async(req,res)=>{
         })
 
         const session=await stripe.checkout.sessions.create({
-            success_url:`${origin}/shop/verify?success=true&orderId=${newOrder._id}`,
-            cancel_url:`${origin}/shop/verify?success=false&orderId=${newOrder._id}`,
+            success_url:`${origin}/#/verify?success=true&orderId=${newOrder._id}`,
+            cancel_url:`${origin}/#/verify?success=false&orderId=${newOrder._id}`,
             line_items,
             mode:'payment',
         })
@@ -94,7 +94,9 @@ const placeOrderStripe=async(req,res)=>{
 
 //Verify Stripe
 const verifyStripe=async(req,res)=>{
-    const {orderId,success,userId}=req.body
+    const {orderId,success}=req.body;
+    const userId = req.userId;
+    console.log("Called verifyStripe:", { orderId, success, userId });
     try {
         if(success==="true"){
             await orderModel.findByIdAndUpdate(orderId,{payment:true})
