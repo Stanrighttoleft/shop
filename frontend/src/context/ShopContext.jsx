@@ -14,11 +14,13 @@ const ShopContextProvider=(props)=>{
     const [search,setSearch]=useState('');
     const [showSearch,setShowSearch]=useState(false);
 
-    //save the cartItems to the localstorage
+    //update cartitems status from localstorage
     const [cartItems, setCartItems]=useState(()=>{
         const savedCart = localStorage.getItem('cartItems');
         return savedCart ? JSON.parse(savedCart) : {};
     });
+
+
     const [products,setProducts]=useState([]);
     const [token, setToken]=useState(()=>localStorage.getItem('token')||'');
     const navigate=useNavigate ();
