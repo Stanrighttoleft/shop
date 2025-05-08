@@ -10,6 +10,6 @@ export default defineConfig({
     tailwindcss(),
     
   ],
-  base:'/shop/',
+  base:'/',
   server:{port:5173},
 })
