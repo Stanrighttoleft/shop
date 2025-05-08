@@ -13,10 +13,21 @@ const ShopContextProvider=(props)=>{
     const backendUrl=import.meta.env.VITE_BACKEND_URL
     const [search,setSearch]=useState('');
     const [showSearch,setShowSearch]=useState(false);
-    const [cartItems, setCartItems]=useState({});
+
+    //save the cartItems to the localstorage
+    const [cartItems, setCartItems]=useState(()=>{
+        const savedCart = localStorage.getItem('cartItems');
+        return savedCart ? JSON.parse(savedCart) : {};
+    });
     const [products,setProducts]=useState([]);
     const [token, setToken]=useState(()=>localStorage.getItem('token')||'');
     const navigate=useNavigate ();
+
+    //useeffect to storage the cartitem
+
+    useEffect(() => {
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      }, [cartItems]);
     
     const addToCart=async(itemId,size)=>{
         let cartData=structuredClone(cartItems);
