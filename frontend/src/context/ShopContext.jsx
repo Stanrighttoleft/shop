@@ -10,7 +10,12 @@ const ShopContextProvider=(props)=>{
 
     const currency='$';
     const delivery_fee=10;
-    const backendUrl=import.meta.env.VITE_BACKEND_URL
+    /**below is for localhost */
+    //const backendUrl=import.meta.env.VITE_BACKEND_URL
+
+    /**this is for online render */
+    const backendUrl='https://shop-fkv2.onrender.com'
+
     const [search,setSearch]=useState('');
     const [showSearch,setShowSearch]=useState(false);
 
