@@ -19,6 +19,7 @@ const ShopContextProvider=(props)=>{
         const savedCart = localStorage.getItem('cartItems');
         return savedCart ? JSON.parse(savedCart) : {};
     });
+    //
 
 
     const [products,setProducts]=useState([]);
@@ -30,6 +31,7 @@ const ShopContextProvider=(props)=>{
     useEffect(() => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
       }, [cartItems]);
+    //
     
     const addToCart=async(itemId,size)=>{
         let cartData=structuredClone(cartItems);
